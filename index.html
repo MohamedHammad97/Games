@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- LOADING ICON -->
+    <div id="loading" class="d-none">
+        <span class="loader"></span>
+    </div>
+
+    <!-- START HEADER SECTION -->
+    <header id="headerSection"></header>
+    <!-- END HEADER SECTION -->
+
+    <!-- START NAV BAR SECTION -->
+        <nav class="navbar navbar-expand-lg navbar-dark w-75 mx-auto rounded-4 position-sticky top-0 z-1">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo-sm.png" class="w-25" alt="">Game Reviews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" data-category="mmorpg"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-category="shooter"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">SHOOTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-category="sailing"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">SAILING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-category="permadeath"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">PERMADEATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-category="superhero"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">SUPERHERO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-category="pixel"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">PIXEL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- END NAV BAR SECTION -->
+
+    <!-- START HOME SECTION -->
+    <section id="home" class="games">
+        <div class="container py-5">
+            <div class="row gy-5" id="demo">
+                
+            </div>
+        </div>
+    </section>
+    <!-- END HOME SECTION -->
+
+    <section id="details" class="details d-none">
+        <div class="container py-4 text-white">
+            <div class="d-flex justify-content-between mb-3">
+                <h2>Details Game</h2>
+                <i class="icofont-close fs-1" id="btnClose"></i>
+            </div>
+            <div class="row" id="gameDetails">
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

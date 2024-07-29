@@ -1,0 +1,154 @@
+/* GLOBAL */
+:root {
+    --nav-bg:#3A497B;
+    --nav-active-color:#09c;
+    --main-bg:#32383E;
+    --card-bg:#272B30;
+    --button-bg:#0D6EFD;
+    --card-footer-bg:#363739;
+    --button-detail:#0DCAF0;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+/* START LOADING SECTION */
+#loading {
+    display: flex;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    position: fixed;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/* END LOADING SECTION */
+
+
+/* START HEADER SECTION */
+#headerSection {
+    background-image: url(../images/wraper.png);
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+}
+/* END HEADER SECTION */
+
+/* START NAV SECTION */
+nav {
+    background-color: var(--nav-bg);    
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--nav-active-color);
+}
+
+.nav-link:focus,
+.nav-link:hover:hover {
+    color: var(--nav-active-color);
+}
+
+nav .nav-link {
+    color: white;
+}
+/* END NAV SECTION */
+
+/* START HOME SECTION */
+#home .card {
+    background-color:var(--card-bg) ;
+    color: white;
+    filter: grayscale(0.7);
+        transition: transform 0.5s, filter 0.5s 0.1s;
+}
+#home .card-body button {
+    background-color: var(--button-bg);
+}
+#home .card-footer button{
+    background-color:var(--card-footer-bg) ;
+}
+
+#home .card:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+/* END HOME SECTION */
+
+/* START DETAILS SECTION */
+#details #gameDetails span button{
+background-color: var(--button-detail);
+color: black;
+}
+
+#details i {
+    cursor: pointer;
+}
+
+#details a:hover {
+    color: white;
+}
+/* END DETAILS SECTION */
